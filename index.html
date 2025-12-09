@@ -298,4 +298,356 @@
       font-size: 10px;
       padding: 3px 8px;
       border-radius: 999px;
-      background: rgba(
+      background: rgba(15,23,42,0.85);
+      border: 1px solid rgba(148,163,184,0.5);
+      color: var(--muted);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .status-pill span.dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .dot-live {
+      background: #22c55e;
+    }
+
+    .dot-prototype {
+      background: #eab308;
+    }
+
+    .dot-planning {
+      background: #38bdf8;
+    }
+
+    .list {
+      margin: 8px 0 0;
+      padding-left: 18px;
+      font-size: 13px;
+      color: #e5e7eb;
+    }
+
+    .list li {
+      margin-bottom: 4px;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 10px;
+      font-size: 12px;
+    }
+
+    .pill {
+      padding: 4px 9px;
+      border-radius: 999px;
+      border: 1px solid rgba(55,65,81,0.9);
+      background: rgba(15,23,42,0.95);
+      color: var(--muted);
+    }
+
+    footer {
+      margin-top: 18px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--muted);
+      padding-bottom: 6px;
+    }
+
+    footer a {
+      color: var(--accent);
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 18px 14px;
+      }
+      h1 {
+        font-size: 24px;
+      }
+      .grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      section {
+        padding: 16px 12px 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="shell">
+
+      <header>
+        <div class="header-inner">
+          <div class="badge-row">
+            <div class="badge">
+              <span class="emoji">🚀</span>
+              <span>Innovation & Project Hub</span>
+            </div>
+            <span>Founder · BDM · International Recruitment Leader</span>
+          </div>
+
+          <div>
+            <h1>Zahed Hossain</h1>
+            <p class="subtitle">
+              Building web platforms, CRMs, student portals and AI-powered tools
+              for international education, recruitment and digital services.
+            </p>
+          </div>
+
+          <div class="header-meta">
+            <span>🌍 UK · EU · Asia · Middle East</span>
+            <span>🎓 EdTech · Recruitment · Digital Products</span>
+          </div>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="mailto:your@email.com">
+              <span class="icon">✉️</span>
+              <span>Contact for collaborations</span>
+            </a>
+            <a class="btn btn-outline" href="https://zaslinks.com" target="_blank" rel="noreferrer">
+              <span class="icon">🌐</span>
+              <span>Visit Zaslinks</span>
+            </a>
+            <a class="btn btn-outline" href="https://linkedin.com/in/zahedzaslinks" target="_blank" rel="noreferrer">
+              <span class="icon">🔗</span>
+              <span>Connect on LinkedIn</span>
+            </a>
+          </div>
+
+          <div class="grid">
+            <div></div>
+            <div class="quick-facts">
+              <h3>Snapshot</h3>
+              <ul>
+                <li><span class="emoji">👥</span><span>Recruited 300–500+ students across roles</span></li>
+                <li><span class="emoji">🤝</span><span>Partnerships across UK, EU, Malaysia, China & UAE</span></li>
+                <li><span class="emoji">🧠</span><span>Founder · BDM · International Recruitment Strategist</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+
+        <section id="projects">
+          <h2><span class="emoji">🛰</span>Featured Innovation Portfolio</h2>
+          <p class="lead">
+            A selection of web platforms, CRMs, student portals, AI tools and digital services
+            built or led by Zahed.
+          </p>
+
+          <h3 style="font-size:13px;margin:6px 0 4px;color:#9ca3af;text-transform:uppercase;letter-spacing:0.12em;">
+            Web Platforms & Portals
+          </h3>
+
+          <div class="card-grid">
+            <div class="card">
+              <div class="status-pill">
+                <span class="dot dot-prototype"></span><span>Private Beta</span>
+              </div>
+              <h3>ApplyDash™ – Student Application Portal</h3>
+              <p class="tagline">Smart application funnel for UK, EU and global admissions.</p>
+              <ul>
+                <li>Centralised application & document management</li>
+                <li>Agent & sub-agent onboarding flows</li>
+                <li>Designed for future AI-driven decision support</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <div class="status-pill">
+                <span class="dot dot-live"></span><span>Internal Use</span>
+              </div>
+              <h3>Zaslinks CRM™ – Student & Agent Management</h3>
+              <p class="tagline">Recruitment ecosystem for leads, targets and sub-agents.</p>
+              <ul>
+                <li>Lead & pipeline tracking by country and intake</li>
+                <li>Yearly targets, budget and conversion overview</li>
+                <li>Sub-agent hierarchy with commission mapping</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <div class="status-pill">
+                <span class="dot dot-prototype"></span><span>Prototype v1</span>
+              </div>
+              <h3>CounselorOne™ – Digital Counselor Workspace</h3>
+              <p class="tagline">A focused workspace for professional student advisors.</p>
+              <ul>
+                <li>SOP, personal statement & GTE drafting tools</li>
+                <li>Case notes, task lists and progress tracking</li>
+                <li>Roadmap for integrated AI copilot for counselors</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <div class="status-pill">
+                <span class="dot dot-planning"></span><span>MVP Planning</span>
+              </div>
+              <h3>Academic City Online – Virtual Learning Portal</h3>
+              <p class="tagline">Concept LMS for flexible delivery and partner institutions.</p>
+              <ul>
+                <li>Course catalogue and enrolment journeys</li>
+                <li>SCORM-ready content & assessments</li>
+                <li>White-label model for colleges and training providers</li>
+              </ul>
+            </div>
+          </div>
+
+          <h3 style="font-size:13px;margin:14px 0 4px;color:#9ca3af;text-transform:uppercase;letter-spacing:0.12em;">
+            AI Tools & Automation
+          </h3>
+
+          <div class="card-grid">
+            <div class="card">
+              <div class="status-pill">
+                <span class="dot dot-prototype"></span><span>Prototype</span>
+              </div>
+              <h3>AI SOP & Personal Statement Generator</h3>
+              <p class="tagline">Drafts high-quality SOPs from structured student data.</p>
+              <ul>
+                <li>Optimised for UK & EU university requirements</li>
+                <li>Produces first-draft copy for counselor refinement</li>
+                <li>Powered by GPT-style language models</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <div class="status-pill">
+                <span class="dot dot-planning"></span><span>Roadmap 2026</span>
+              </div>
+              <h3>AI Chatbot for Student Recruitment</h3>
+              <p class="tagline">Always-on assistant for student queries.</p>
+              <ul>
+                <li>Answers questions on visas, admissions and funding</li>
+                <li>Designed for UK, EU, Australia, Malaysia and more</li>
+                <li>Embeddable on landing pages and student portals</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <div class="status-pill">
+                <span class="dot dot-live"></span><span>Operational</span>
+              </div>
+              <h3>AI File Conversion & Document Suite</h3>
+              <p class="tagline">Behind-the-scenes tools for daily operations.</p>
+              <ul>
+                <li>PDF ⇄ Word, image → PDF, compress & merge</li>
+                <li>Templates for CVs, SOPs and application forms</li>
+                <li>Used in freelance and consulting workflows</li>
+              </ul>
+            </div>
+          </div>
+
+          <h3 style="font-size:13px;margin:14px 0 4px;color:#9ca3af;text-transform:uppercase;letter-spacing:0.12em;">
+            Digital Stores & Creative Work
+          </h3>
+
+          <div class="card-grid">
+            <div class="card">
+              <div class="status-pill">
+                <span class="dot dot-planning"></span><span>Beta Roadmap</span>
+              </div>
+              <h3>DigitalVortex – Digital Product Store</h3>
+              <p class="tagline">Curated tools for agencies, counselors and students.</p>
+              <ul>
+                <li>SOP, CV and email templates</li>
+                <li>Recruitment checklists and trackers</li>
+                <li>Marketing & social media Canva packs</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <div class="status-pill">
+                <span class="dot dot-live"></span><span>Active</span>
+              </div>
+              <h3>Professional Services & Consulting</h3>
+              <p class="tagline">Freelance and advisory work in education and digital ops.</p>
+              <ul>
+                <li>SOP & academic writing support</li>
+                <li>Application & recruitment consulting</li>
+                <li>File conversion, research and VA services</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <div class="status-pill">
+                <span class="dot dot-live"></span><span>Ongoing</span>
+              </div>
+              <h3>EdTech Branding & Illustrated Stories</h3>
+              <p class="tagline">Design and story-driven visuals.</p>
+              <ul>
+                <li>“Study in UK/EU” campaign assets</li>
+                <li>Student journey & village-life illustration series</li>
+                <li>Pet and emotional storytelling artworks</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="roles">
+          <h2><span class="emoji">🏢</span>Professional Roles & Leadership</h2>
+          <p class="lead">
+            Blending leadership in business development, education consultancy and digital innovation.
+          </p>
+          <ul class="list">
+            <li><strong>Business Development Manager – ABE Global (Bangladesh & Nepal)</strong> – Leading growth, institutional partnerships and regional strategy.</li>
+            <li><strong>Founder – Zaslinks Study Group</strong> – Built and managed multi-destination recruitment, supporting 300–500+ students across roles.</li>
+            <li><strong>Country Head – Zain Global UK (Bangladesh)</strong> – Responsible for student recruitment operations, partner management and events.</li>
+            <li><strong>Executive Member – QAHE</strong> – Supporting international accreditation and partnership activities.</li>
+          </ul>
+        </section>
+
+        <section id="stack">
+          <h2><span class="emoji">🧩</span>Tech Stack & Focus Regions</h2>
+          <p class="lead">
+            Combining practical recruitment experience with hands-on web development, automation and design.
+          </p>
+
+          <div class="pill-row">
+            <span class="pill">HTML5 · CSS3 · JavaScript</span>
+            <span class="pill">Tailwind · React · basic Vue</span>
+            <span class="pill">Node.js · Express</span>
+            <span class="pill">Netlify · Vercel · GitHub Pages</span>
+            <span class="pill">Airtable · Sheets · Neon (basic)</span>
+            <span class="pill">GPT-based AI tools</span>
+            <span class="pill">Canva · Figma · Adobe Express</span>
+          </div>
+
+          <p class="lead" style="margin-top:12px;">
+            <strong>Regions & Markets:</strong> UK · EU (Hungary, Spain, France, Netherlands) · Malaysia · China · UAE
+          </p>
+        </section>
+
+        <section id="contact">
+          <h2><span class="emoji">📬</span>Contact & Links</h2>
+          <p class="lead">
+            Open to collaborations with universities, colleges, education agents and digital partners.
+          </p>
+          <ul class="list">
+            <li><strong>Email:</strong> <a href="mailto:your@email.com">your@email.com</a></li>
+            <li><strong>WhatsApp:</strong> +44 0774 372 6785</li>
+            <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/zahedzaslinks" target="_blank" rel="noreferrer">linkedin.com/in/zahedzaslinks</a></li>
+            <li><strong>Website:</strong> <a href="https://zaslinks.com" target="_blank" rel="noreferrer">zaslinks.com</a></li>
+          </ul>
+        </section>
+
+      </main>
+
+      <footer>
+        Built for GitHub Pages by <strong>Zahed Hossain</strong>.  
+        You can update content directly in <code>index.html</code>.
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
